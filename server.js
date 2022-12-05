@@ -1,14 +1,14 @@
+const dotenv = require("dotenv");
 const express = require("express");
 const app = express();
 dotenv.config();
 const cors = require("cors");
-const dotenv = require("dotenv");
 const userService = require("./user-service.js");
 const passport = require("passport");
 const passportJWT = require("passport-jwt");
 const jwt = require("jsonwebtoken");
 
-const HTTP_PORT = process.env.PORT || 3030;
+const HTTP_PORT = process.env.PORT || 7070;
 const JWT_SECRET = process.env.JWT_SECRET || "";
 
 const ExtractJwt = passportJWT.ExtractJwt;
